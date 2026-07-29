@@ -4,57 +4,18 @@ import { FiArrowRight, FiStar, FiUsers, FiMap, FiAward, FiClock } from 'react-ic
 import { motion } from 'framer-motion'
 import { useTheme } from '../context/ThemeContext'
 import { useInView } from 'react-intersection-observer'
+import { trekData } from '../data/trekData'
 
 const Home = () => {
   const { theme } = useTheme()
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.1 })
 
-  const featuredTreks = [
-    {
-      id: 1,
-      name: 'Kedarkantha Trek',
-      state: 'Uttarakhand',
-      difficulty: 'Moderate',
-      duration: '6 Days',
-      altitude: '12,500 ft',
-      price: 8999,
-      originalPrice: 12999,
-      rating: 4.8,
-      image: 'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800',
-      discount: 30
-    },
-    {
-      id: 2,
-      name: 'Hampta Pass',
-      state: 'Himachal Pradesh',
-      difficulty: 'Moderate',
-      duration: '5 Days',
-      altitude: '14,000 ft',
-      price: 10999,
-      originalPrice: 15999,
-      rating: 4.9,
-      image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      discount: 31
-    },
-    {
-      id: 3,
-      name: 'Valley of Flowers',
-      state: 'Uttarakhand',
-      difficulty: 'Easy',
-      duration: '7 Days',
-      altitude: '11,500 ft',
-      price: 12999,
-      originalPrice: 17999,
-      rating: 4.7,
-      image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
-      discount: 28
-    }
-  ]
+  const featuredTreks = trekData.filter(t => t.featured).slice(0, 3)
 
   const destinations = [
-    { name: 'Uttarakhand', image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=400', treks: 15 },
-    { name: 'Himachal Pradesh', image: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=400', treks: 12 },
-    { name: 'Kashmir', image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400', treks: 8 },
+    { name: 'Uttarakhand', image: 'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=400', treks: trekData.filter(t => t.state === 'Uttarakhand').length },
+    { name: 'Himachal Pradesh', image: 'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=400', treks: trekData.filter(t => t.state === 'Himachal Pradesh').length },
+    { name: 'Kashmir', image: 'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=400', treks: trekData.filter(t => t.state === 'Kashmir').length },
   ]
 
   const whyChooseUs = [
@@ -207,7 +168,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {featuredTreks.map((trek, index) => (
               <motion.div
-                key={trek.id}
+                key={trek._id}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -217,7 +178,7 @@ const Home = () => {
               >
                 <div className="relative">
                   <img
-                    src={trek.image}
+                    src={trek.images[0]}
                     alt={trek.name}
                     className="w-full h-56 object-cover"
                   />
@@ -263,7 +224,7 @@ const Home = () => {
                   </div>
                   
                   <Link
-                    to={`/treks/${trek.id}`}
+                    to={`/treks/${trek.slug}`}
                     className="block w-full py-3 bg-primary-green text-white rounded-lg font-semibold text-center hover:bg-green-700 transition-colors"
                   >
                     Book Now

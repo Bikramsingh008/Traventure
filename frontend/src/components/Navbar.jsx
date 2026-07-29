@@ -53,23 +53,41 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`font-medium transition-colors duration-200 ${
-                  location.pathname === link.path
-                    ? 'text-primary-green'
-                    : theme === 'dark'
-                    ? 'text-gray-300 hover:text-white'
-                    : 'text-gray-700 hover:text-primary-green'
-                }`}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </div>
+{/* Desktop Navigation */}
+<div className="hidden md:flex items-center space-x-8">
+  {navLinks.map((link) => {
+    const isActive = location.pathname === link.path
+
+    return (
+      <Link
+        key={link.path}
+        to={link.path}
+        className="relative group py-2"
+      >
+        <span
+          className={`font-semibold text-[16px] transition-all duration-300 ${
+            isActive
+              ? 'text-primary-green'
+              : theme === 'dark'
+              ? 'text-gray-300 group-hover:text-white'
+              : 'text-gray-700 group-hover:text-primary-green'
+          }`}
+        >
+          {link.name}
+        </span>
+
+        {/* Underline */}
+        <span
+          className={`absolute left-0 -bottom-1 h-[3px] rounded-full bg-primary-green transition-all duration-300 ${
+            isActive
+              ? 'w-full'
+              : 'w-0 group-hover:w-full'
+          }`}
+        />
+      </Link>
+    )
+  })}
+</div>
 
           {/* Right Side Actions */}
           <div className="hidden md:flex items-center space-x-4">
@@ -111,21 +129,39 @@ const Navbar = () => {
             ) : (
               <div className="flex items-center space-x-3">
                 <Link
-                  to="/login"
-                  className={`px-4 py-2 rounded-lg font-medium transition-all duration-200 ${
-                    theme === 'dark'
-                      ? 'text-gray-300 hover:text-white'
-                      : 'text-gray-700 hover:text-primary-green'
-                  }`}
-                >
-                  Login
-                </Link>
+  to="/login"
+  className="relative group px-2 py-2"
+>
+  <span
+    className={`font-medium transition-all duration-300 ${
+      location.pathname === '/login'
+        ? 'text-primary-green'
+        : theme === 'dark'
+        ? 'text-gray-300 group-hover:text-white'
+        : 'text-gray-700 group-hover:text-primary-green'
+    }`}
+  >
+    Login
+  </span>
+
+  <span
+    className={`absolute left-0 -bottom-1 h-[3px] rounded-full bg-primary-green transition-all duration-300 ${
+      location.pathname === '/login'
+        ? 'w-full'
+        : 'w-0 group-hover:w-full'
+    }`}
+  />
+</Link>
                 <Link
-                  to="/signup"
-                  className="px-6 py-2 rounded-lg bg-primary-green text-white font-medium hover:bg-green-700 transition-all duration-200"
-                >
-                  Sign Up
-                </Link>
+  to="/signup"
+  className={`px-6 py-2 rounded-lg font-medium transition-all duration-300 ${
+    location.pathname === '/signup'
+      ? 'bg-green-700 ring-2 ring-green-300 text-white'
+      : 'bg-primary-green hover:bg-green-700 text-white'
+  }`}
+>
+  Sign Up
+</Link>
               </div>
             )}
           </div>

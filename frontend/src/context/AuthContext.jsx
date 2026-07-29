@@ -1,33 +1,17 @@
 import React, { createContext, useContext, useState, useEffect } from 'react'
 
-interface User {
-  id: string
-  name: string
-  email: string
-  role: 'user' | 'admin'
-}
+const AuthContext = createContext(undefined)
 
-interface AuthContextType {
-  user: User | null
-  login: (email: string, password: string) => Promise<void>
-  signup: (name: string, email: string, password: string) => Promise<void>
-  logout: () => void
-  isAuthenticated: boolean
-  isAdmin: boolean
-}
-
-const AuthContext = createContext<AuthContextType | undefined>(undefined)
-
-export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<User | null>(() => {
+export const AuthProvider = ({ children }) => {
+  const [user, setUser] = useState(() => {
     const savedUser = localStorage.getItem('user')
     return savedUser ? JSON.parse(savedUser) : null
   })
 
-  const login = async (email: string, password: string) => {
+  const login = async (email, password) => {
     // This will be replaced with actual API call
     // For now, mock login
-    const mockUser: User = {
+    const mockUser = {
       id: '1',
       name: 'John Doe',
       email,
@@ -37,9 +21,9 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     localStorage.setItem('user', JSON.stringify(mockUser))
   }
 
-  const signup = async (name: string, email: string, password: string) => {
+  const signup = async (name, email, password) => {
     // This will be replaced with actual API call
-    const mockUser: User = {
+    const mockUser = {
       id: '1',
       name,
       email,

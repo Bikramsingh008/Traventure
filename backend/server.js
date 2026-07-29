@@ -33,9 +33,11 @@ app.get('/', (req, res) => {
   res.json({ message: 'Traventure API Server is running' })
 })
 
-// Import routes (will be created)
+// Import routes
+import trekRoutes from './routes/trekRoutes.js'
+
+app.use('/api/treks', trekRoutes)
 // app.use('/api/auth', authRoutes)
-// app.use('/api/treks', trekRoutes)
 // app.use('/api/bookings', bookingRoutes)
 // app.use('/api/reviews', reviewRoutes)
 // app.use('/api/users', userRoutes)
