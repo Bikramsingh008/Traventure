@@ -4,7 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion'
 import {
   FiArrowLeft, FiStar, FiClock, FiMap, FiCalendar,
   FiCheck, FiX, FiChevronDown, FiChevronUp,
-  FiUsers, FiPhone, FiPackage, FiThermometer
+  FiUsers, FiPhone, FiPackage, FiThermometer,
+  FiChevronLeft, FiChevronRight
 } from 'react-icons/fi'
 import { useTheme } from '../context/ThemeContext'
 import { useAuth } from '../context/AuthContext'
@@ -39,6 +40,15 @@ const TrekDetail = () => {
   useEffect(() => {
     if (trek && trek.pickupOptions) setSelectedPickup(trek.pickupOptions[0])
     window.scrollTo(0, 0)
+  }, [trek])
+
+  useEffect(() => {
+    if (trek && trek.images.length > 1) {
+      const interval = setInterval(() => {
+        setActiveImg((prev) => (prev + 1) % trek.images.length)
+      }, 3000)
+      return () => clearInterval(interval)
+    }
   }, [trek])
 
   if (!trek) {
@@ -94,13 +104,31 @@ const TrekDetail = () => {
               src={trek.images[activeImg]}
               alt={trek.name}
               className="w-full h-full object-cover"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.4 }}
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -50 }}
+              transition={{ duration: 0.5 }}
             />
           </AnimatePresence>
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+
+          {/* Navigation buttons */}
+          {trek.images.length > 1 && (
+            <>
+              <button
+                onClick={() => setActiveImg((prev) => (prev - 1 + trek.images.length) % trek.images.length)}
+                className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg transition-colors z-10"
+              >
+                <FiChevronLeft size={24} className="text-gray-800" />
+              </button>
+              <button
+                onClick={() => setActiveImg((prev) => (prev + 1) % trek.images.length)}
+                className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white p-3 rounded-full shadow-lg transition-colors z-10"
+              >
+                <FiChevronRight size={24} className="text-gray-800" />
+              </button>
+            </>
+          )}
 
           {/* Badges on image */}
           <div className="absolute top-4 left-4 flex gap-2 flex-wrap">

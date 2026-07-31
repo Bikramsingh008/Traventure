@@ -15,11 +15,13 @@ export const trekData = [
     totalRatings: 234,
     featured: true,
     images: [
+      'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800',
+      'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800',
+      'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800',
       'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
-      'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800'
+      'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800'
     ],
-    description: 'Kedarkantha is one of the most popular winter treks in Uttarakhand. The summit offers breathtaking 360-degree views of Himalayan peaks including Swargarohini, Bandarpunch, and Black Peak.',
+    description: 'Kedarkantha is one of the most popular winter treks in Uttarakhand.',
     included: ['Meals', 'Hotel Stay', 'Transportation', 'Pickup from Delhi'],
     pickupPoint: 'Delhi',
     pickupOptions: ['Delhi', 'Dehradun'],
@@ -61,10 +63,12 @@ export const trekData = [
     featured: true,
     images: [
       'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800',
+      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800',
+      'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800',
       'https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=800',
       'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800'
     ],
-    description: 'A UNESCO World Heritage Site, Valley of Flowers is a mesmerizing meadow of endemic alpine flowers. The valley changes colors with the season, creating a magical landscape.',
+    description: 'A UNESCO World Heritage Site, Valley of Flowers is a mesmerizing meadow of endemic alpine flowers.',
     included: ['Meals', 'Hotel Stay', 'Transportation'],
     pickupPoint: 'Haridwar',
     pickupOptions: ['Haridwar', 'Rishikesh'],
@@ -104,11 +108,13 @@ export const trekData = [
     totalRatings: 189,
     featured: true,
     images: [
-      'https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800',
+      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
       'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800'
+      'https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800',
+      'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800',
+      'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800'
     ],
-    description: 'Hampta Pass is a beautiful crossover trek that takes you from lush green valleys of Kullu to the arid landscapes of Spiti. The dramatic landscape change is a photographer\'s paradise.',
+    description: 'Hampta Pass is a beautiful crossover trek that takes you from lush green valleys of Kullu to the arid landscapes of Spiti.',
     included: ['Meals', 'Hotel Stay', 'Transportation', 'Pickup from Delhi'],
     pickupPoint: 'Manali',
     pickupOptions: ['Manali', 'Delhi'],
@@ -148,11 +154,13 @@ export const trekData = [
     totalRatings: 156,
     featured: true,
     images: [
+      'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800',
+      'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800',
       'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800',
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800'
+      'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800',
+      'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800'
     ],
-    description: 'Roopkund, also known as the Mystery Lake, is famous for the human skeletons found at its bottom. This challenging trek offers stunning views of Trishul and Nanda Ghunti peaks.',
+    description: 'Roopkund, also known as the Mystery Lake, is famous for the human skeletons found at its bottom.',
     included: ['Meals', 'Hotel Stay', 'Transportation', 'Pickup from Delhi'],
     pickupPoint: 'Delhi',
     pickupOptions: ['Delhi', 'Kathgodam'],
@@ -195,10 +203,12 @@ export const trekData = [
     featured: false,
     images: [
       'https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=800',
+      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
       'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800'
+      'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800',
+      'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800'
     ],
-    description: 'Triund is a perfect weekend trek near McLeodganj. The trail offers beautiful views of the Dhauladhar range and is ideal for beginners. The sunset view from the top is mesmerizing.',
+    description: 'Triund is a perfect weekend trek near McLeodganj. The trail offers beautiful views of the Dhauladhar range.',
     included: ['Meals', 'Hotel Stay'],
     pickupPoint: 'McLeodganj',
     pickupOptions: ['McLeodganj', 'Dharamshala'],
@@ -236,10 +246,12 @@ export const trekData = [
     featured: false,
     images: [
       'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800',
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800'
+      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800',
+      'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800',
+      'https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=800',
+      'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800'
     ],
-    description: 'Kheerganga is famous for its natural hot water spring believed to have healing properties. The trek takes you through beautiful pine forests and offers stunning views of Parvati Valley.',
+    description: 'Kheerganga is famous for its natural hot water spring believed to have healing properties.',
     included: ['Meals', 'Hotel Stay', 'Transportation'],
     pickupPoint: 'Kasol',
     pickupOptions: ['Kasol', 'Bhuntar'],
@@ -277,11 +289,13 @@ export const trekData = [
     totalRatings: 145,
     featured: true,
     images: [
-      'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800',
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800'
+      'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800',
+      'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800',
+      'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800',
+      'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800',
+      'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800'
     ],
-    description: 'Har Ki Dun, meaning "Valley of Gods", is a cradle-shaped hanging valley in the Garhwal Himalayas. The trek offers stunning views of Swargarohini peaks and ancient villages.',
+    description: 'Har Ki Dun, meaning "Valley of Gods", is a cradle-shaped hanging valley in the Garhwal Himalayas.',
     included: ['Meals', 'Hotel Stay', 'Transportation', 'Pickup from Delhi'],
     pickupPoint: 'Delhi',
     pickupOptions: ['Delhi', 'Dehradun'],
@@ -323,11 +337,13 @@ export const trekData = [
     totalRatings: 98,
     featured: false,
     images: [
+      'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800',
+      'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800',
+      'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800',
       'https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800',
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800'
+      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800'
     ],
-    description: 'Brahmatal is a beautiful winter trek that offers stunning views of frozen lakes and snow-covered peaks. The trail passes through dense forests and offers panoramic Himalayan views.',
+    description: 'Brahmatal is a beautiful winter trek that offers stunning views of frozen lakes and snow-covered peaks.',
     included: ['Meals', 'Hotel Stay', 'Transportation'],
     pickupPoint: 'Kathgodam',
     pickupOptions: ['Kathgodam', 'Dehradun'],
@@ -367,11 +383,13 @@ export const trekData = [
     totalRatings: 167,
     featured: false,
     images: [
-      'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800',
-      'https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=800',
-      'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800'
+      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
+      'https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800',
+      'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800',
+      'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800'
     ],
-    description: 'Beas Kund is the source of the Beas River and offers stunning views of the surrounding peaks. This easy trek is perfect for beginners and offers beautiful camping spots.',
+    description: 'Beas Kund is the source of the Beas River and offers stunning views of the surrounding peaks.',
     included: ['Meals', 'Hotel Stay', 'Transportation'],
     pickupPoint: 'Manali',
     pickupOptions: ['Manali', 'Delhi'],
@@ -410,11 +428,13 @@ export const trekData = [
     totalRatings: 289,
     featured: true,
     images: [
-      'https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=800',
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800'
+      'https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?w=800',
+      'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800',
+      'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800',
+      'https://images.unsplash.com/photo-1519681393784-d120267933ba?w=800',
+      'https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=800'
     ],
-    description: 'Chopta is known as the "Mini Switzerland of India" and the trek to Tungnath Temple (highest Shiva temple) offers breathtaking views of Chaukhamba peaks.',
+    description: 'Chopta is known as the "Mini Switzerland of India" and the trek to Tungnath Temple offers breathtaking views of Chaukhamba peaks.',
     included: ['Meals', 'Hotel Stay'],
     pickupPoint: 'Haridwar',
     pickupOptions: ['Haridwar', 'Rishikesh'],
@@ -452,11 +472,13 @@ export const trekData = [
     totalRatings: 134,
     featured: true,
     images: [
-      'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800',
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800'
+      'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800',
+      'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800',
+      'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800',
+      'https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800',
+      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800'
     ],
-    description: 'The Kashmir Great Lakes Trek is one of the most beautiful treks in India, passing through seven alpine lakes. The trail offers stunning meadows, snow-capped peaks, and crystal clear lakes.',
+    description: 'The Kashmir Great Lakes Trek is one of the most beautiful treks in India, passing through seven alpine lakes.',
     included: ['Meals', 'Hotel Stay', 'Transportation', 'Pickup from Delhi'],
     pickupPoint: 'Srinagar',
     pickupOptions: ['Srinagar', 'Delhi'],
@@ -499,11 +521,13 @@ export const trekData = [
     totalRatings: 378,
     featured: false,
     images: [
-      'https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800',
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800'
+      'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800',
+      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800',
+      'https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800',
+      'https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=800',
+      'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800'
     ],
-    description: 'Nag Tibba is the highest peak in the lesser Himalayan region and offers a perfect weekend getaway. The trek provides stunning views of Bandarpunch and Kedarnath peaks.',
+    description: 'Nag Tibba is the highest peak in the lesser Himalayan region and offers a perfect weekend getaway.',
     included: ['Meals', 'Hotel Stay'],
     pickupPoint: 'Dehradun',
     pickupOptions: ['Dehradun', 'Mussoorie'],
@@ -540,11 +564,13 @@ export const trekData = [
     totalRatings: 67,
     featured: true,
     images: [
-      'https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=800',
-      'https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=800',
-      'https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800'
+      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800',
+      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
+      'https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800',
+      'https://images.unsplash.com/photo-1589308078059-be1415eab4c3?w=800',
+      'https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=800'
     ],
-    description: 'Pin Parvati Pass is a challenging high-altitude trek connecting the lush Parvati Valley to the arid Spiti Valley. The trek offers dramatic landscape changes and stunning glacier views.',
+    description: 'Pin Parvati Pass is a challenging high-altitude trek connecting the lush Parvati Valley to the arid Spiti Valley.',
     included: ['Meals', 'Hotel Stay', 'Transportation', 'Pickup from Delhi'],
     pickupPoint: 'Manali',
     pickupOptions: ['Manali', 'Delhi'],
@@ -590,11 +616,13 @@ export const trekData = [
     totalRatings: 156,
     featured: false,
     images: [
-      'https://images.unsplash.com/photo-1504198458649-3128b932f49e?w=800',
-      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800',
-      'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800'
+      'https://images.unsplash.com/photo-1516426122078-c23e76319801?w=800',
+      'https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800',
+      'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800',
+      'https://images.unsplash.com/photo-1501555088652-021faa106b9b?w=800',
+      'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800'
     ],
-    description: 'Dayara Bugyal is one of the most beautiful high-altitude meadows in Uttarakhand. The winter trek offers stunning snow-covered landscapes while summer brings lush green meadows.',
+    description: 'Dayara Bugyal is one of the most beautiful high-altitude meadows in Uttarakhand.',
     included: ['Meals', 'Hotel Stay', 'Transportation'],
     pickupPoint: 'Haridwar',
     pickupOptions: ['Haridwar', 'Dehradun'],
